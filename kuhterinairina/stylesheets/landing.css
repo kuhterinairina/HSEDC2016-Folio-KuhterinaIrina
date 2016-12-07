@@ -35,6 +35,12 @@
   right: 191px;
   left: 159px;
 }
+.mainSection.right,
+.mainSection.center {
+  color: white;
+  /*background-color: #999999;*/
+}
+
 .mainSection.right section {
   right: 61px;
   color: white;
@@ -42,8 +48,6 @@
 
 .mainSection.center {
   text-align: center;
-    color: white;
-  background-color: #999999;
 }
 
 
@@ -55,6 +59,16 @@
 .mainSection.center section {
   width: 100%;
 }
+
+.mainSection.center section nav {
+  margin-top: 500px;
+  font-size: 0;
+}
+
+.mainSection.center section nav a {
+  margin: 0 10px;
+}
+
 
 .mockup {
   position: absolute;
@@ -108,6 +122,13 @@
   background-image: url(../images/screens.png);
 }
 
-#mockup4 {
-
+@media screen and (max-width: 1460px) {
+  .landingWrapper {
+    width: 100%;
+  }
 }
+
+@media screen and (max-width: 1180px) {
+  body.landing.bg {
+    background-image: url(../images/1180_First_Breakpoint.png);
+  }
