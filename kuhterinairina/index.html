@@ -22,18 +22,8 @@
     <script src="javascripts/jquery-3.1.1.js"></script>
     <script src="javascripts/social-likes.min.js"></script>
 
-    <style media="screen">
-      body {
-        background-image: url(images/mockups/1440.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-        margin: 0 auto;
-        height: 3200px;
-        width: 1440px;
-      }
-    </style>
   </head>
-  <body class="landing">
+  <body class="landing bg">
     <nav class="menubar">
       <div>
         <figure class="logo">
@@ -49,7 +39,8 @@
           <p>
             Шаблон сайта-портфолио, разработанный<br>
             командой Hæd Exchange для обучения основам<br>
-            веб-вёрстки в рамках образовательного проекта<br>
+            веб-вёрстки в рамках образовательного<br class="compact">
+            проекта<br class="full">
             Hack Exchange.
           </p>
           <figure></figure>
@@ -71,10 +62,11 @@
           </p>
           <figure></figure>
         </section>
-
-        <figure class="mockup" id="mockup2">
-        <figure class="mockup" id="mockup3">
-        <figure class="mockup" id="mockup4">
+        <div>
+          <figure class="mockup" id="mockup2"></figure>
+          <figure class="mockup" id="mockup3"></figure>
+          <figure class="mockup" id="mockup4"></figure>
+        </div>
       </section>
 
       <section class="mainSection left">
@@ -85,8 +77,9 @@
           </h2>
           <p>
             Шаблон хорошо смотрится на компьютерах,<br>
-            планшетах и смартфонах. Не достаёт только версий<br>
-            для телефизора и часов.
+            планшетах и смартфонах. Не достаёт только<br class="compact">
+            версий<br class="full">
+            для телевизора и часов.
           </p>
           <figure></figure>
         </section>
@@ -101,18 +94,29 @@
             Возможность самостоятельного<br>
             и курируемого обучения.
           </h2>
+
           <p>
             Вы можете обучаться самостоятельно по исходному коду проекта,<br>
             выложенному на GitHub, или записаться на курс “Основы<br>
-            веб-вёрстки с Захаром Днём” на Hack Exchange.<br>
+            веб-вёрстки с Захаром Днём” на Hack Exchange.
           </p>
+
+          <nav>
+            <a class=" mint"href="http://lessons.hack.exchange">Курс на Hack Exchange</a>
+            <a class="small" href="https://github.com/ZakharDay/Wikimedium">Исходный код на GitHub</a>
+          </nav>
+
         </section>
+        <footer>
+          <p>Пожалуйста, поделитесь знаниями с друзьями</p>
 
-        <nav>
-          <a class="btn color large" href="http://lessons.hack.exchange">Курс на Hack Exchange</a>
-          <a class="btn nocolor small" href="https://github.com/ZakharDay/Wikimedium">Исходный код на GitHub</a>
-        </nav>
+          <div class="social-likes social-likes_single" data-url="http://wikimedium.hack.exchange" data-single-title="Поделиться">
+            <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+            <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+            <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+          </div>
+        </footer>
       </section>
-
+    </section>
   </body>
 </html>
