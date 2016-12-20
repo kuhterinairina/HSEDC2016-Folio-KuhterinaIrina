@@ -5,9 +5,9 @@
 }
 
 body.landing.bg  {
-  background-image: url(../images/mockups/1440.png);
+  /*background-image: url(../images/mockups/1440.png);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top center;*/
   background-color: #FAFAFA;
 }
 
@@ -184,9 +184,9 @@ body.landing * {
 }
 
 @media screen and (max-width: 1179px) {
-  body.landing.bg  {
+  /*body.landing.bg  {
   background-image: url(../images/mockups/_1180.png);
-  }
+  }*/
 
   .full {
     display: none;
@@ -290,9 +290,9 @@ body.landing * {
 }
 
 @media screen and (max-width: 839px) {
-  body.landing.bg  {
+  /*body.landing.bg  {
     background-image: url(../images/mockups/_840.png);
-  }
+  }*/
   .full {
     display: none;
   }
