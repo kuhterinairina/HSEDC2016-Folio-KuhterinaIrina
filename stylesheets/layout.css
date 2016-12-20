@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 body {
   min-width: 768px;
   font-family: 'PT Sans', sans-serif;
@@ -14,12 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body.posts,
-body.landing {
-  background-color: #FAFAFA;
-}
-
-body.posts .menubar,
 body.landing .menubar {
   position: fixed;
   top: 0;
@@ -29,7 +18,6 @@ body.landing .menubar {
   min-width: 768px;
 }
 
-body.posts .menubar,
 body.landing .menubar div {
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);

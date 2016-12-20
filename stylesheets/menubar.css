@@ -26,6 +26,7 @@
   background-repeat: no-repeat;
 }
 
+
 @media screen and (max-width: 1179px) {
   .menubar div {
     height: 38px;
