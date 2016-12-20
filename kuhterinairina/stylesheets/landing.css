@@ -1,8 +1,15 @@
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body.landing.bg  {
-    background-image: url(../images/mockups/1440.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
+  background-image: url(../images/mockups/1440.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #FAFAFA;
+}
 
 body.landing * {
   -webkit-transition: all .3s ease;
@@ -29,9 +36,8 @@ body.landing * {
   width: 1440px;
   margin: 0 auto;
   background-color: white;
-
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
 }
-
 
 .mainSection {
   position: relative;
@@ -79,15 +85,6 @@ body.landing * {
   right: 61px;
 }
 
-.mainSection.right div {
-  margin-top: 193px;
-}
-
-.mainSection.right div figure {
-  display: inline-block;
-  margin: 0px auto;
-  width: 140px;
-}
 
 .mainSection.center {
   text-align: center;
@@ -119,13 +116,20 @@ body.landing * {
   bottom: 0;
   right: 0;
   width: 100%;
-  padding-bottom: 37px;
+  padding-bottom: 31px;
 }
 
 .mainSection.center footer p {
   font-size: 16px;
 }
 
+.mainSection.right div {
+  margin-top: 193px;
+}
+
+.mainSection.right div figure {
+  width: 140px;
+}
 
 .mockup {
   position: absolute;
@@ -173,34 +177,15 @@ body.landing * {
   background-image: url(../images/screens.png);
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1440px) {
   .landingWrapper {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  body.landing.bg  {
-      background-image: url(../images/mockups/1680.png);
-    }
-  .landingWrapper  {
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
-    background-color: #FAFAFA;
   }
 }
 
 @media screen and (max-width: 1179px) {
   body.landing.bg  {
   background-image: url(../images/mockups/_1180.png);
-  }
-
-  .menubar div {
-    height: 38px;
-  }
-
-  .logo {
-    width: 60px;
-    height: 17px;
   }
 
   .full {
@@ -215,10 +200,12 @@ body.landing * {
     width: 1179px;
     height: 568px;
   }
+
   .mainSection section {
     width: 410px;
     top: 136px;
   }
+
   .mainSection section figure {
     margin-top: 43px;
     height: 3px;
@@ -238,16 +225,9 @@ body.landing * {
   .mainSection.left section {
     left: 191px;
   }
+
   .mainSection.right section {
     right: 124px;
-  }
-
-  .mainSection.right div {
-    margin-top: 138px;
-  }
-
-  .mainSection.right div figure {
-    width: 100px;
   }
 
   .mainSection.center p {
@@ -257,6 +237,7 @@ body.landing * {
   .mainSection.center section nav {
     margin: 40px 0;
   }
+
   .mainSection.center section nav a {
     padding: 14px;
   }
@@ -267,6 +248,14 @@ body.landing * {
 
   .mainSection.center footer p {
     font-size: 13px;
+  }
+
+  .mainSection.right div {
+    margin-top: 138px;
+  }
+
+  .mainSection.right div figure {
+    width: 100px;
   }
 
   #mockup1 {
@@ -294,11 +283,12 @@ body.landing * {
 
   #mockup5 {
     top: 243px;
-    right: 137px;
+    right: 105px;
     height: 287px;
-    width: 510px;
+    width: 542px;
   }
 }
+
 @media screen and (max-width: 839px) {
   body.landing.bg  {
     background-image: url(../images/mockups/_840.png);
@@ -327,13 +317,6 @@ body.landing * {
     right: 103px;
   }
 
-  .mainSection.right div {
-    margin-top: 456px;
-  }
-
-  .mainSection.right div figure {
-    width: 140px;
-  }
   .mainSection.center section {
     top: 186px;
   }
@@ -346,6 +329,14 @@ body.landing * {
     margin-top: 43px;
     height: 3px;
     width: 22px;
+  }
+
+  .mainSection.right div {
+    margin-top: 456px;
+  }
+
+  .mainSection.right div figure {
+    width: 140px;
   }
 
   #mockup1 {
@@ -366,8 +357,8 @@ body.landing * {
   }
 
   #mockup4 {
-  left: 520px;
-  height: 474px;
+    left: 520px;
+    height: 474px;
   }
 
   #mockup5 {
@@ -377,9 +368,10 @@ body.landing * {
     width: 701px;
   }
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   #mockup1 { background-image: url(../images/about@2x.png); }
   #mockup3 { background-image: url(../images/works@2x.jpg); }
   #mockup4 { background-image: url(../images/work@2x.jpg); }
-  #mockup5 { background-image: url(../images/screens@2x.jpg); }
+  #mockup5 { background-image: url(../images/screens@2x.png); }
 }
